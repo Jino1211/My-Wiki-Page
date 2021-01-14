@@ -1,6 +1,7 @@
 :root {
   --back-color: #dffdfc;
   --description-font: Verdana, Geneva, Tahoma, sans-serif;
+  --active-color: rgb(243, 200, 243);
 }
 /* @media screen and (max-width: 600px) {
   body {
@@ -39,10 +40,14 @@ body {
   font-size: 2rem;
 }
 .clickbar:active {
-  color: tomato;
+  background-color: var(--active-color);
+  font-size: 200%;
+  border-radius: 10%;
+  opacity: 0.5;
 }
 .clickbar:hover {
   color: tomato;
+  padding-top: 5px;
 }
 .navul {
   list-style: none;
@@ -67,6 +72,7 @@ body {
   font-size: 1.75em;
 }
 .brands {
+  list-style: none;
   padding-top: 7%;
   text-align: left;
   font-size: 1.5em;
@@ -83,6 +89,12 @@ body {
   height: 6em;
   margin-left: 20px;
   margin-top: 8px;
+}
+.brand-icon:hover {
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: var(--active-color);
+  border-radius: 10%;
 }
 .div-link {
   position: relative;
