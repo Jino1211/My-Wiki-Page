@@ -1,0 +1,40 @@
+:root {
+  --back-color: #dffdfc;
+}
+
+body {
+  background-color: var(--back-color);
+}
+.header {
+  text-align: center;
+  /* height: 20vh; */
+}
+#h1-header {
+  color: #ffe4e4;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 4px 4px cadetblue;
+  font-size: 5em;
+}
+.navbar {
+  border-radius: 15px;
+  background-color: #ffe4e4;
+  overflow: hidden;
+  display: inline-flexbox;
+}
+.clickbar {
+  font-style: bold;
+  float: left;
+  color: #5bf3ee;
+  text-align: justify;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.clickbar.active {
+}
+.clickbar:hover {
+  color: tomato;
+}
+ul {
+  list-style: none;
+}
