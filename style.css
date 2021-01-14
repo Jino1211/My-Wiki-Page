@@ -7,12 +7,12 @@ body {
 }
 .header {
   text-align: center;
-  /* height: 20vh; */
+  height: 20vh;
 }
 #h1-header {
   color: #ffe4e4;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-shadow: 4px 4px cadetblue;
+  font-family: var(--main-font);
+  text-shadow: 6px 6px cadetblue;
   font-size: 5em;
 }
 .navbar {
@@ -22,7 +22,7 @@ body {
   display: inline-flexbox;
 }
 .clickbar {
-  font-style: bold;
+  font-weight: bold;
   float: left;
   color: #5bf3ee;
   text-align: justify;
@@ -31,10 +31,55 @@ body {
   font-size: 2rem;
 }
 .clickbar.active {
+  color: tomato;
 }
 .clickbar:hover {
   color: tomato;
 }
 ul {
   list-style: none;
+}
+.Pp1 {
+  line-height: 1.25em;
+  padding: 1em 5em;
+  font-weight: 800;
+  font-size: 20px;
+  border: 5px solid #ffe4e4;
+  background-color: rgb(243, 200, 243);
+}
+
+.bodystyle {
+  width: 560px;
+  max-height: 420px;
+  margin: auto;
+  padding-top: 13%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  background-color: #ffe4e4;
+}
+.footer-content-right {
+  padding-right: 40px;
+  margin-top: 20px;
+  float: right;
+}
+.icon-style {
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.icon-style:hover {
+  background-color: yellow;
+  padding: 5px;
+}
+#pfooter {
+  float: left;
+  font-weight: 1000;
+  font-size: 2vh;
+  font-family: "Englebert", sans-serif;
 }
