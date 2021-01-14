@@ -2,6 +2,7 @@
   --back-color: #dffdfc;
   --description-font: Verdana, Geneva, Tahoma, sans-serif;
   --active-color: rgb(243, 200, 243);
+  --shadow-setting; 6px 6px cadetblue;
 }
 /* @media screen and (max-width: 600px) {
   body {
@@ -48,6 +49,7 @@ body {
 .clickbar:hover {
   color: tomato;
   padding-top: 5px;
+  text-shadow:6px 6px cadetblue ;
 }
 .navul {
   list-style: none;
@@ -129,3 +131,30 @@ body {
   font-size: 2vh;
   font-family: "Englebert", sans-serif;
 }
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  input[type=submit] {
+    background-color:#ffe4e4;
+    color: #5bf3ee;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:bold ;
+  }
+  input[type=submit]:hover {
+    background-color:tomato;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
