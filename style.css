@@ -86,12 +86,14 @@ body {
 #pvideo {
     text-align: center;
 }
+#header-p3 {
+    font-size: 1.75em;
+}
 .brands {
   list-style: none;
   margin:5% auto;
   text-align: left;
   font-size: 1.5em;
-}
 }
 .description {
   font-size: 0.75em;
@@ -112,8 +114,17 @@ body {
   background-color: var(--active-color);
   border-radius: 10%;
 }
-.div-link {
-
+.grid-tricks {
+    margin: 5% 0%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.span {
+    font-weight: var(--description-font);
+    font-weight: bold;
+}
+.div-tricks {
+    margin: 2% 5%;
 }
 .footer {
   position: fixed;
