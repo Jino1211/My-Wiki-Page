@@ -4,19 +4,6 @@
   --active-color: rgb(243, 200, 243);
   --shadow-setting: 0.2em 0.15em cadetblue;
 }
-/* @media screen and (max-height: 800px) {
-    .bodystyle{ 
-        width: auto;
-        height: auto;
-}
-} 
-@media only screen and (max-height:800px) {
-    .iframe {
-        width: auto;
-        height:20vh;
-}
-}  */
-
 body {
   background-color: var(--back-color);
 }
