@@ -2,7 +2,7 @@
   --back-color: #dffdfc;
   --description-font: Verdana, Geneva, Tahoma, sans-serif;
   --active-color: rgb(243, 200, 243);
-  --shadow-setting; 6px 6px cadetblue;
+  --shadow-setting: 0.2em 0.15em cadetblue;
 }
 /* @media screen and (max-height: 800px) {
     .bodystyle{ 
@@ -27,8 +27,7 @@ body {
 }
 .h1-header {
   color: #ffe4e4;
-  font-family: var(--main-font);
-  text-shadow: 6px 6px cadetblue;
+  text-shadow: var(--shadow-setting);
   font-size: 5em;
   top: 10%;
   margin-top: 8%;
@@ -36,7 +35,7 @@ body {
 .navbar {
   width: 100%;
   position: fixed;
-  border-radius: 15px;
+  border-radius: 3em;
   background-color: #ffe4e4;
   overflow: hidden;
   top: 0;
@@ -47,20 +46,20 @@ body {
   font-weight: bold;
   float: left;
   color: #5bf3ee;
-  padding: 14px 16px;
+  padding: 0.2em 0.8em;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2em;
 }
 .clickbar:active {
   background-color: var(--active-color);
   font-size: 200%;
   border-radius: 10%;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .clickbar:hover {
   color: tomato;
-  padding-top: 5px;
-  text-shadow:6px 6px cadetblue ;
+  padding-top: 1%;
+  text-shadow: var(--shadow-setting);
 }
 .navul {
   list-style: none;
@@ -72,27 +71,26 @@ body {
   padding: 2.25em 5em;
   font-weight: 800;
   font-size: 1.3em;
-  border: 5px solid #ffe4e4;
+  border: 0.3em solid #ffe4e4;
   background-color: rgb(243, 200, 243);
 }
 .bodystyle {
-  width: 560px;
-  max-height: 420px;
+  width: fit-content;
   padding-bottom: 1%;
-  margin: 5% auto
+  margin: 5% auto;
 }
 #header-p {
   font-size: 1.75em;
 }
 #pvideo {
-    text-align: center;
+  text-align: center;
 }
 #header-p3 {
-    font-size: 1.75em;
+  font-size: 1.75em;
 }
 .brands {
   list-style: none;
-  margin:5% auto;
+  margin: 5% auto;
   text-align: left;
   font-size: 1.5em;
 }
@@ -110,138 +108,141 @@ body {
   margin-left: 10%;
 }
 .brand-icon:hover {
-  padding-left: 5px;
-  padding-top: 5px;
+  padding-left: 0.4%;
+  padding-bottom: 0.4%;
   background-color: var(--active-color);
   border-radius: 10%;
 }
 .grid-tricks {
-    margin: 5% 0%;
-    display: grid;
-    grid-template-columns: auto auto auto;
+  margin: 5% 0%;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .span {
-    font-weight: var(--description-font);
-    font-weight: bold;
+  font-weight: var(--description-font);
+  font-weight: bold;
 }
 .div-tricks {
-    margin: 2% 6%;
+  margin: 2% 6%;
 }
 #p-store {
-    font-size: 2em;
+  font-size: 2em;
 }
 .grid-store {
-    margin: 5% auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .store-img {
-    display: block;
-    margin: 6% auto;
+  display: block;
+  margin: 6% auto;
 }
 .price {
-    display: block;
-    font-weight:bold;
-    font-size: 2em;
-    text-align: center;
-    position: relative;
-    top: 2%;
+  display: block;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  top: 2%;
 }
 .buy-button {
-    position: absolute;
-    top: 84%;
-    right: 43%;
-    margin: auto;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-weight: bold;
-    background-color: var(--active-color);
+  position: absolute;
+  top: 84%;
+  right: 43%;
+  margin: auto;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: bold;
+  background-color: var(--active-color);
+  border-radius: 1em;
 }
 #coat {
-    display: block;
-    font-weight:bold;
-    font-size: 2em;
-    text-align: center;
-    position: relative;
-    top: 8%;
+  display: block;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  top: 8%;
 }
 .buy-button:hover {
-    animation-name: buy;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+  animation-name: buy;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
 }
 @keyframes buy {
-    0% {
-        width: 20%;
-        background-color: rgb(247, 176, 247) ;
-    }
-    50% {
-        width: 30%;
-        background-color: rgb(250, 162, 250) ;
-    }
-    75% {
-        width: 25%;
-        background-color: rgb(250, 101, 250) ;
-    }
-    100% {
-        width: 20%;
-        background-color: rgb(248, 82, 248) ;
-    }
+  0% {
+    width: 15%;
+    background-color: rgb(247, 176, 247);
+  }
+  50% {
+    width: 30%;
+    background-color: rgb(250, 162, 250);
+  }
+  75% {
+    width: 25%;
+    background-color: rgb(250, 101, 250);
+  }
+  100% {
+    width: 20%;
+    background-color: rgb(248, 82, 248);
+  }
 }
 .store-items {
-    border: 1.5em solid var(--active-color);
-    position: relative
+  border: 1.5em solid var(--active-color);
+  position: relative;
 }
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 8.5%;
   text-align: center;
   background-color: #ffe4e4;
 }
 .footer-content-right {
-  padding-right: 40px;
-  margin-top: 20px;
+  padding-right: 1.5%;
+  margin-top: 1%;
   float: right;
 }
 .icon-style {
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 5px;
+  height: 2.7em;
+  margin-left: 1em;
 }
 .icon-style:hover {
   background-color: yellow;
-  padding: 5px;
+  padding: 0.4em;
 }
 .name {
   float: left;
   font-weight: 1000;
-  font-size: 2vh;
+  font-size: 130%;
   font-family: "Englebert", sans-serif;
 }
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;  
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  input[type=submit] {
-    background-color:#ffe4e4;
-    color: #5bf3ee;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight:bold ;
-    margin-bottom: 10%;
-  }
-  input[type=submit]:hover {
-    background-color:tomato;
-  }
-  
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7%;
+  border: 0.2em solid #ccc;
+  border-radius: 1em;
+  box-sizing: border-box;
+  margin-top: 0.7%;
+  margin-bottom: 1%;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #ffe4e4;
+  color: #5bf3ee;
+  padding: 0.7% 3%;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+input[type="submit"]:hover {
+  background-color: tomato;
+}
