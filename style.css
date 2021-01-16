@@ -41,6 +41,7 @@ body {
   overflow: hidden;
   top: 0;
   height: 10%;
+  z-index: 1;
 }
 .clickbar {
   font-weight: bold;
@@ -124,37 +125,45 @@ body {
     font-weight: bold;
 }
 .div-tricks {
-    margin: 2% 5%;
+    margin: 2% 6%;
 }
 #p-store {
     font-size: 2em;
 }
 .grid-store {
-    margin: 5% 0%;
+    margin: 5% auto;
     display: grid;
-    grid-template-columns: 30em 30em 30em;
-    grid-template-rows: 25em;
+    grid-template-columns: auto auto auto;
 }
 .store-img {
     display: block;
-    margin: 10% auto;
-} 
+    margin: 6% auto;
+}
 .price {
-    text-align: center;
     display: block;
-    font-weight: bold;
+    font-weight:bold;
     font-size: 2em;
-    
+    text-align: center;
+    position: relative;
+    top: 2%;
 }
 .buy-button {
-    margin: 0;
     position: absolute;
-    top: 83%;
-    right: 40%;
+    top: 84%;
+    right: 43%;
+    margin: auto;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-weight: bold;
     background-color: var(--active-color);
+}
+#coat {
+    display: block;
+    font-weight:bold;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 8%;
 }
 .buy-button:hover {
     animation-name: buy;
@@ -171,11 +180,11 @@ body {
         background-color: rgb(250, 162, 250) ;
     }
     75% {
-        width: 10%;
+        width: 25%;
         background-color: rgb(250, 101, 250) ;
     }
     100% {
-        width: auto;
+        width: 20%;
         background-color: rgb(248, 82, 248) ;
     }
 }
